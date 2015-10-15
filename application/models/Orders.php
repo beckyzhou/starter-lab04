@@ -20,7 +20,7 @@ class Orders extends MY_Model {
         {
             $record = $CI->orderitems->get($num, $code);
             $record->quantity++;
-            $CI->orderitems->pdate($record);
+            $CI->orderitems->update($record);
         }
         else
         {
